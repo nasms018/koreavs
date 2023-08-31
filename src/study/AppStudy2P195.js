@@ -16,7 +16,7 @@ function WordCount({children =""}){
 
   useEffect(() => {
     //반복적으로 구동되는 군!! 노리는 효과가 아님..
-    console.log("refresh render");
+    console.log("refresh render111");
   }, [word]);
 }
 
