@@ -14,11 +14,23 @@ import AppStudy2P239WindowFixedSizeList from 'study/AppStudy2P239WindowFixedSize
 //import AppStudy2P242UseFetch from 'study/AppStudy2P242UseFetch';
 import AppStudy2P242 from 'study/AppStudy2P242';
 import AppStudy2P244 from 'study/AppStudy2P244';
-
+import {useIterator} from 'hooks/useIterator'
+import RepoItem from 'components/RepoItem'
+import GitUserRepositories from 'components/GitUserRepositories';
+import GitUserByFetch from 'components/GitUserByFetch';
 function App() {
+
+
   return (
     <div className="App">
-      {/*
+
+        <GitUserByFetch loginId={"nasms018"} />
+    </div>
+  );
+}
+
+export default App;
+/*
     <AppStudy2P189 />
     <AppStudy2P194 />
     <AppStudy2P195 />
@@ -32,10 +44,17 @@ function App() {
     <AppStudy2P239WindowFixedSizeList  />
     <AppStudy2P242UseFetch />
     <AppStudy2P242 />
-      */}
-      <AppStudy2P244 />
-    </div>
-  );
-}
+    
 
-export default App;
+  <button onClick={prev}>prev</button>
+  <button onClick={next}>next</button>
+  <p>{item}</p>
+
+  const items = ['aaa','bbb','ccc','ddd'];
+  const {item, prev, next} = useIterator(items);
+  <AppStudy2P244/>
+  const fff = ['aaa','bbb','ccc','ddd'];
+  <RepoItem repositories={fff} />
+  <GitUserRepositories loginId={"moonhighway"} />
+    
+*/
