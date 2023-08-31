@@ -1,7 +1,7 @@
 import React from 'react';
 import GitUserByFetch from 'components/GitUserByFetch'
 
-function AppStudy2P244({loginId}) {
+function AppStudy2P244() {
   return <GitUserByFetch loginId={"moonhighway"} />
  
 } 

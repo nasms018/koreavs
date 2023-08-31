@@ -31,9 +31,9 @@ function App() {
     <AppStudy2P237Faker />
     <AppStudy2P239WindowFixedSizeList  />
     <AppStudy2P242UseFetch />
- <AppStudy2P242 />
-*/}
- <AppStudy2P244 />
+    <AppStudy2P242 />
+      */}
+      <AppStudy2P244 />
     </div>
   );
 }
